@@ -1,0 +1,39 @@
+{
+    "name": "paneidos/laravel-ide-helper-model-fix",
+    "description": "Fix the doc block causing trouble in PhpStorm with a single command.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sernin van de Krol",
+            "email": "serninpc@paneidos.net"
+        }
+    ],
+    "require": {
+        "illuminate/console": "5.4.*|5.5.*",
+        "illuminate/database": "5.4.*|5.5.*",
+        "illuminate/support": "5.4.*|5.5.*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paneidos\\LaravelIdeHelper\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs": "phpcs --standard=psr2 src/",
+        "cbf": "phpcbf --standard=psr2 src/"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paneidos\\LaravelIdeHelper\\FixModelServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
