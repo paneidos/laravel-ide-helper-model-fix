@@ -13,7 +13,7 @@ To be used in conjunction with [barryvdh/laravel-ide-helper](https://github.com/
 
 ## Add it your composer.json
 
-If you're using laravel-ide-helper, you should at it right after the other ide-helper commands
+If you're using laravel-ide-helper, you should add it right after the other ide-helper commands
 
 ```json
 {
