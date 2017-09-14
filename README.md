@@ -17,17 +17,13 @@ If you're using laravel-ide-helper, you should at it right after the other ide-h
 
 ```json
 {
-    // snip...
     "scripts": {
-        // snip...
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:meta",
-            "@php artisan ide-helper:fix-model-docblock" // Add this line
-        ],
-        // snip...
+            "@php artisan ide-helper:fix-model-docblock"
+        ]
     }
-    // snip...
 }
 ```
